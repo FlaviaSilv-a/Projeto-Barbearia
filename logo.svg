@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Barbearia Carioca">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#f2b705"/>
+      <stop offset="1" stop-color="#006d9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="white" rx="20" />
+  <!-- stylized wave -->
+  <path d="M10 130 C40 100 80 150 120 120 C150 95 180 135 190 110" fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round"/>
+  <!-- scissors simple -->
+  <g transform="translate(30,30) scale(.9)">
+    <circle cx="80" cy="80" r="10" fill="#1b2b34" opacity="0.9"/>
+    <path d="M95 60 L140 100" stroke="#1b2b34" stroke-width="6" stroke-linecap="round"/>
+    <path d="M95 100 L140 60" stroke="#1b2b34" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="18" y="185" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1b2b34">Barbearia Carioca</text>
+</svg>

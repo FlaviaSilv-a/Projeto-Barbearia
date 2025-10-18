@@ -1,0 +1,101 @@
+/* Barbearia Carioca - simples e elegante (carioca vibes) */
+:root{
+  --primary:#006d9c; /* mar carioca */
+  --accent:#f2b705;  /* sol / areia */
+  --muted:#f4f7f8;
+  --text:#1b2b34;
+  --glass: rgba(255,255,255,0.6);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:linear-gradient(180deg,var(--muted),#ffffff);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 28px;
+  background:linear-gradient(90deg, rgba(0,109,156,0.06), rgba(242,183,5,0.03));
+  position:sticky;
+  top:0;
+  z-index:10;
+  backdrop-filter: blur(6px);
+}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px}
+.brand h1{margin:0;font-size:1.2rem;letter-spacing:0.6px}
+.tag{margin:0;font-size:.85rem;color: rgba(27,43,52,0.7)}
+.main-nav a{
+  margin-left:16px;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:600;
+}
+.hero{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  padding:48px 28px;
+  max-width:1100px;
+  margin:20px auto;
+}
+.hero-content{flex:1;min-width:260px}
+.hero h2{font-size:2rem;margin:0 0 12px 0}
+.hero p{margin:0 0 18px 0;color:rgba(27,43,52,0.75)}
+.cta{
+  display:inline-block;
+  padding:12px 18px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:700;
+}
+.services{max-width:1100px;margin:10px auto;padding:20px 28px}
+.services h3{margin:0 0 14px 0}
+.cards{display:flex;gap:14px;flex-wrap:wrap}
+.card{
+  background:white;
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(6,30,45,0.06);
+  min-width:200px;
+  flex:1;
+}
+.about, .contact{max-width:1100px;margin:10px auto;padding:18px 28px;background:transparent}
+.site-footer{padding:20px 28px;text-align:center;color:rgba(27,43,52,0.7)}
+
+/* Floating WhatsApp button */
+.wa-float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  border:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 24px rgba(0,0,0,0.18);
+  background:linear-gradient(135deg,var(--accent),var(--primary));
+  color:white;
+  cursor:pointer;
+  z-index:1000;
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.wa-float:active{transform:scale(.96)}
+.wa-icon{width:26px;height:26px}
+
+/* Responsive */
+@media (max-width:720px){
+  .main-nav{display:none}
+  .hero{flex-direction:column;align-items:flex-start;padding:28px}
+  .logo{width:48px;height:48px}
+  .wa-float{right:14px;bottom:14px;width:56px;height:56px}
+}

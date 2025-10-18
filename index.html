@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Barbearia Carioca</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="Logo Barbearia Carioca" class="logo" />
+      <div>
+        <h1>Barbearia Carioca</h1>
+        <p class="tag">Corte com ginga — simples, elegante e carioca</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#home">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Bem-vindo à Barbearia Carioca</h2>
+        <p>Um espaço pequeno e acolhedor, com cortes precisos e clima descontraído do Rio.</p>
+        <a class="cta" href="#contato">Agende seu horário</a>
+      </div>
+      <div class="hero-img" aria-hidden="true">
+        <!-- Decorative illustration -->
+        <svg viewBox="0 0 300 200" class="hero-wave" xmlns="http://www.w3.org/2000/svg" role="img">
+          <rect width="100%" height="100%" fill="transparent"/>
+          <path d="M0 140 C60 100 120 180 180 140 C240 100 300 160 360 140 L360 220 L0 220 Z" transform="scale(.8 .8)" fill="#EAF6FA"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="servicos" class="services">
+      <h3>Nossos serviços</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Corte Masculino</h4>
+          <p>Modelagens clássicas e contemporâneas — navalha quando você quiser.</p>
+        </div>
+        <div class="card">
+          <h4>Barba & Bigode</h4>
+          <p>Design de barba para combinar com seu estilo.</p>
+        </div>
+        <div class="card">
+          <h4>Combo</h4>
+          <p>Corte + Barba com atenção aos detalhes e finalização caprichada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <h3>Sobre</h3>
+      <p>Pequena barbearia local com atendimento personalizado. Atmosfera carioca — leve, criativa e com alma praiana.</p>
+    </section>
+
+    <section id="contato" class="contact">
+      <h3>Contato</h3>
+      <p>Endereço: Rua da Praia, 123 — Centro (exemplo)</p>
+      <p>Horário: Terça a Sábado — 09:00 às 18:00</p>
+      <div class="socials">
+        <a class="btn" href="#" onclick="openWhatsApp()">Marcar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Barbearia Carioca — Feito com carinho carioca.</p>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <button id="waFloat" class="wa-float" aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 24 24" class="wa-icon" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+      <path d="M20.5 3.5A11.9 11.9 0 0012 .5 11.9 11.9 0 003.5 3.5 11.9 11.9 0 00.5 12c0 2.1.6 4.1 1.7 5.9L.5 23.5l5.9-1.8A11.9 11.9 0 0012 23.5c6.6 0 12-5.4 12-12 0-1.9-.5-3.7-1.5-5.3zM12 21.5c-1.6 0-3.1-.4-4.5-1.1l-.3-.2-3.5 1.1 1.1-3.4-.2-.3C4 15.1 3.5 13.6 3.5 12c0-4.7 3.8-8.5 8.5-8.5S20.5 7.3 20.5 12 16.7 21.5 12 21.5z" fill="currentColor"/>
+      <path d="M17.3 14.1c-.3-.1-1.9-.9-2.1-1-.2-.1-.3-.1-.5.1-.2.2-.9.8-1.1 1-.2.2-.4.2-.7.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.1-.2 0-.3.1-.4.1-.1.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2- .5-1.1-.7-1.5-.2-.4-.4-.3-.6-.3-.2 0-.4 0-.6 0-.2 0-.6.1-.9.6-.3.5-1 1.9-1 3.7 0 1.8 1.1 3.5 1.2 3.8.2.4 2 3.1 5 4.3 3 .9 3.1.6 3.7.5.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.3-.4-.4-.7-.5z" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
